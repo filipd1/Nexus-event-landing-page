@@ -1,0 +1,115 @@
+.section-tickets .front-page-header {
+  gap: 150px;
+}
+.section-tickets .timer-wrapper {
+  background-color: var(--bg-color-section);
+  padding: 70px;
+  border-radius: 50px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.section-tickets .timer-wrapper p {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.section-tickets .timer-wrapper .timer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section-tickets .timer-wrapper .timer .timer-days,
+.section-tickets .timer-wrapper .timer .timer-hours,
+.section-tickets .timer-wrapper .timer .timer-minutes {
+  font-size: 200px;
+  text-align: center;
+  z-index: 2;
+}
+.section-tickets .timer-wrapper .timer .timer-label {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+.section-tickets .timer-wrapper .timer-img {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  z-index: 1;
+}
+.section-tickets .ticket-options {
+  margin-top: 40px;
+}
+.section-tickets .ticket-options .ticket-cards-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card {
+  background-color: var(--accent);
+  padding: 50px;
+  border-radius: 50px;
+  width: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card h5 {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card .desc {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card .price {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card .btn {
+  background-color: var(--gray);
+  color: #000;
+}
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card .btn svg path {
+  fill: #000;
+}
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card:nth-of-type(2),
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card:nth-of-type(3) {
+  background-color: unset;
+  border: 1px solid #fff;
+}
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card:nth-of-type(2) .btn,
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card:nth-of-type(3) .btn {
+  background: var(--gradient-smooth);
+  color: #fff;
+}
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card:nth-of-type(2) .btn svg path,
+.section-tickets .ticket-options .ticket-cards-wrapper .ticket-card:nth-of-type(3) .btn svg path {
+  fill: #fff;
+}
+
+@media (max-width: 768px) {
+  .section-tickets .timer-wrapper {
+    padding: 30px;
+  }
+  .section-tickets .timer-wrapper .timer .timer-days,
+  .section-tickets .timer-wrapper .timer .timer-hours,
+  .section-tickets .timer-wrapper .timer .timer-minutes {
+    font-size: 100px;
+  }
+  .section-tickets .timer-wrapper .timer-img {
+    opacity: 0.6;
+  }
+  .section-tickets .ticket-options .ticket-cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .section-tickets .ticket-options .ticket-cards-wrapper .ticket-card {
+    padding: 30px;
+    height: 370px;
+  }
+}/*# sourceMappingURL=tickets-section.css.map */

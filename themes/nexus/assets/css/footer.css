@@ -1,0 +1,100 @@
+.site-footer {
+  background-color: var(--bg-no-gradient);
+  width: 1240px;
+  margin-inline: auto;
+  background-color: var(--gray);
+  display: flex;
+  align-items: stretch;
+  border-radius: 50px;
+}
+.site-footer .footer-left {
+  padding: 70px;
+  width: 50%;
+  color: #000;
+}
+.site-footer .footer-left h5 {
+  font-size: 26px;
+}
+.site-footer .footer-left p {
+  opacity: 0.6;
+}
+.site-footer .footer-left ul {
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin: 50px 0;
+}
+.site-footer .footer-left ul li {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+.site-footer .footer-left ul li a {
+  color: #000;
+}
+.site-footer .footer-left ul li a:hover {
+  color: #3f3f3f;
+}
+.site-footer .footer-right {
+  padding: 70px;
+  width: 50%;
+  background-color: var(--accent);
+  border-radius: 50px;
+  color: #fff;
+}
+.site-footer .footer-right .contact-subtitle {
+  margin-bottom: 20px;
+}
+.site-footer .footer-right .wpforms-container {
+  margin: 40px 0;
+  padding: 0;
+  width: 100%;
+}
+.site-footer .footer-right .wpforms-container .wpforms-form input[type=email] {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.site-footer .footer-right .wpforms-container .wpforms-form input[type=email]::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.site-footer .footer-right .wpforms-container .wpforms-form input[type=email]::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.site-footer .footer-right .wpforms-container .wpforms-form .wpforms-submit {
+  color: #000;
+  background: var(--gray);
+  border-radius: 999px;
+  padding: 20px 40px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.site-footer .footer-right .wpforms-container .wpforms-form .wpforms-submit:hover {
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid #fff;
+}
+.site-footer .footer-right .wpforms-container .wpforms-confirmation-scroll {
+  border-radius: 14px;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .site-footer .footer-left,
+  .site-footer .footer-right {
+    padding: 30px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=footer.css.map */

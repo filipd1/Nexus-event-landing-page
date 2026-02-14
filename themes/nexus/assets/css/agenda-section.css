@@ -1,0 +1,67 @@
+.section-agenda .agenda-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  row-gap: 150px;
+  background: var(--bg-color-section);
+  padding: 100px 80px;
+  border-radius: 50px;
+  margin-top: 40px;
+  position: relative;
+}
+.section-agenda .agenda-container .agenda-event {
+  grid-column: 1/-1;
+  display: contents;
+}
+.section-agenda .agenda-container .agenda-event .agenda-event-time {
+  font-size: 40px;
+  grid-column: 1;
+}
+.section-agenda .agenda-container .agenda-event .agenda-event-overview {
+  grid-column: 2;
+}
+.section-agenda .agenda-container .agenda-event .agenda-event-overview h5 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.section-agenda .agenda-container .agenda-event .agenda-event-overview p {
+  font-size: 20px;
+}
+.section-agenda .agenda-container .btn {
+  background: var(--gradient);
+  grid-column: 2;
+  width: 100%;
+  justify-content: center;
+}
+.section-agenda .agenda-container .section-agenda-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .section-agenda .agenda-container {
+    padding: 50px 30px;
+    row-gap: 50px;
+  }
+  .section-agenda .agenda-container .agenda-event {
+    z-index: 2;
+  }
+  .section-agenda .agenda-container .agenda-event .agenda-event-time {
+    font-size: 30px;
+  }
+  .section-agenda .agenda-container .agenda-event .agenda-event-overview h5 {
+    font-size: 30px;
+  }
+  .section-agenda .agenda-container .agenda-event .agenda-event-overview p {
+    font-size: 18px;
+  }
+  .section-agenda .agenda-container .btn {
+    background: var(--gradient-smooth);
+    font-size: 18px;
+    z-index: 2;
+  }
+  .section-agenda .agenda-container .section-agenda-img {
+    z-index: 1;
+    opacity: 0.6;
+  }
+}/*# sourceMappingURL=agenda-section.css.map */

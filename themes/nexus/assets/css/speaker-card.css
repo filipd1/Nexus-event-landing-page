@@ -1,0 +1,34 @@
+.speaker-cards {
+  height: 452px;
+  display: flex;
+  gap: 20px;
+}
+.speaker-cards .media {
+  width: 50%;
+}
+.speaker-cards .media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+  filter: grayscale(1);
+}
+.speaker-cards .content {
+  padding: 30px;
+  background: var(--gray);
+  color: #1C1A1A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 50px;
+  width: 50%;
+}
+.speaker-cards .content h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.speaker-cards .content p {
+  font-size: 20px;
+  opacity: 0.7;
+}/*# sourceMappingURL=speaker-card.css.map */

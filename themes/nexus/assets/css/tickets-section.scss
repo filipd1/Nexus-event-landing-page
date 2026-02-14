@@ -1,0 +1,150 @@
+.section-tickets {
+    .front-page-header {
+        gap: 150px;
+    }
+
+    .timer-wrapper {
+        background-color: var(--bg-color-section);
+        padding: 70px;
+        border-radius: 50px;
+        margin-top: 40px;
+        position: relative;
+        overflow: hidden;
+
+        p {
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        .timer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .timer-days,
+            .timer-hours,
+            .timer-minutes {
+                font-size: 200px;
+                text-align: center;
+                z-index: 2;
+            }
+            
+            .timer-label {
+                font-size: 16px;
+                text-transform: uppercase;
+                text-align: center;
+                z-index: 2;
+            }
+        }
+
+        .timer-img {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            z-index: 1;
+        }
+    }
+
+    .ticket-options {
+        margin-top: 40px;
+        
+        .ticket-cards-wrapper {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+
+            .ticket-card {
+                background-color: var(--accent);
+                padding: 50px;
+                border-radius: 50px;
+                width: 400px;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-size: 26px;
+                    text-transform: uppercase;
+                }
+
+                .desc {
+                    font-size: 20px;
+                    margin-top: 20px;
+                }
+
+                .price {
+                    font-size: 50px;
+                    font-weight: bold;
+                    margin-top: auto;
+                    margin-bottom: 20px;
+                }
+
+                .btn {
+                    background-color: var(--gray);
+                    color: #000;
+
+                    svg {
+                        path {
+                            fill: #000;
+                        }
+                    }
+                }
+            }
+
+            .ticket-card:nth-of-type(2), 
+            .ticket-card:nth-of-type(3) {
+                background-color: unset;
+                border: 1px solid #fff;
+
+                .btn {
+                    background: var(--gradient-smooth);
+                    color: #fff;
+
+                    svg {
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .section-tickets {
+
+        .timer-wrapper {
+            padding: 30px;
+
+            .timer {
+
+                .timer-days,
+                .timer-hours,
+                .timer-minutes {
+                    font-size: 100px;
+                }
+            }
+
+            .timer-img {
+                opacity: .6;
+            }
+        }
+
+        .ticket-options {
+        
+            .ticket-cards-wrapper {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+
+                .ticket-card {
+                    padding: 30px;
+                    height: 370px;
+                }
+            }
+        }
+    }
+}

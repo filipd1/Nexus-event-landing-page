@@ -1,0 +1,113 @@
+.site-footer {
+    background-color: var(--bg-no-gradient);
+    width: 1240px;
+    margin-inline: auto;
+    background-color: var(--gray);
+    display: flex;
+    align-items: stretch;
+    border-radius: 50px;
+
+    .footer-left {
+        padding: 70px;
+        width: 50%;
+        color: #000;
+
+        h5 {
+            font-size: 26px;
+        }
+
+        p {
+            opacity: .6;
+        }
+
+        ul {
+            columns: 2;
+            column-gap: 40px;
+            margin: 50px 0;
+
+            li {
+                break-inside: avoid;
+                padding-bottom: 15px;
+                font-size: 20px;
+                
+                a {
+                    color: #000
+                }
+
+                a:hover {
+                    color: #3f3f3f
+                }
+            }
+        }
+    }
+
+    .footer-right {
+        padding: 70px;
+        width: 50%;
+        background-color: var(--accent);
+        border-radius: 50px;
+        color: #fff;
+
+        .contact-subtitle {
+            margin-bottom: 20px;
+        }
+
+        .wpforms-container {
+            margin: 40px 0;
+            padding: 0;
+            width: 100%;
+
+            .wpforms-form {
+
+                input[type="email"] {
+                    background: none;
+                    border: none;
+                    outline: none;
+                    font-size: 20px;
+                    border-bottom: 1px solid #fff;
+                    color: #fff;
+                }
+
+                input[type="email"]::placeholder {
+                    color: #fff;
+                    opacity: 1;
+                }
+
+                .wpforms-submit {
+                    color: #000;
+                    background: var(--gray);
+                    border-radius: 999px;
+                    padding: 20px 40px;
+                    font-size: 20px;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                }
+
+                .wpforms-submit:hover {
+                    color: #fff;
+                    background: var(--accent);
+                    border: 1px solid #fff;
+                }
+            }
+
+            .wpforms-confirmation-scroll {
+                border-radius: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .site-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .footer-left,
+        .footer-right {
+            padding: 30px;
+            width: 100%;
+        }
+    }
+}

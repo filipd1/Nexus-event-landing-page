@@ -1,0 +1,39 @@
+.speaker-cards {
+  height: 452px;
+  display: flex;
+  gap: 20px;
+
+    .media {
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+        filter: grayscale(1);
+      }
+    }
+
+    .content {
+      padding: 30px;
+      background: var(--gray);
+      color: #1C1A1A;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 50px;
+      width: 50%;
+
+      h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 20px;
+        opacity: 0.7;
+      }
+    }
+  
+}

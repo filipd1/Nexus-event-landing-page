@@ -1,0 +1,5 @@
+# ignoruj pluginy
+plugins/
+
+# cache i upgrade
+upgrade/

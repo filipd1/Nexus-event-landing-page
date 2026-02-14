@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Syne:wght@400..800&display=swap');
+@import 'header.css';
+@import 'footer.css';
+@import 'front-page.css';
+@import 'speaker-card.css';
+@import 'benefits-section.css';
+@import 'tickets-section.css';
+@import 'contact-section.css';
+@import 'agenda-section.css';
+
+:root {
+    --bg-color: #000;
+    --bg-color-section: #1A1A1A;
+    --bg-mobile-menu: #2e2e2e;
+    --font-color-main: #fff;
+    --accent: #0147FF;
+    --gradient: linear-gradient(90deg, #0147FF 0%, rgba(1, 71, 255, 0) 100%);
+    --gradient-smooth: linear-gradient(90deg, rgba(1, 71, 255, 1) 8%, rgba(1, 71, 255, 0.5) 100%);
+    --gray: #DEDEE0;
+    
+    color: var(--font-color-main);
+    background: var(--bg-color);
+    font-family: "Syne", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 360px;
+    position: relative;
+    color: var(--font-color-main);
+}
+
+a {
+    color: var(--font-color-main);
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 100px;
+    padding: 20px 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+a:hover {
+    color: var(--font-color-main);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 1240px;
+    margin-top: 40px;
+    margin-inline: auto;
+}
+
+.section {
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        padding: 2em;
+    }
+
+    .section {
+        margin-bottom: 100px;
+    }
+}
